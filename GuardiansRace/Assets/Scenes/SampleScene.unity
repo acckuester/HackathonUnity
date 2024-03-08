@@ -812,6 +812,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2072379390}
+  - component: {fileID: 2072379391}
   m_Layer: 0
   m_Name: Car
   m_TagString: Untagged
@@ -828,7 +829,7 @@ Transform:
   m_GameObject: {fileID: 2072379389}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.2341, y: 0.34, z: 0}
+  m_LocalPosition: {x: 1.53, y: 0.34, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -843,6 +844,19 @@ Transform:
   - {fileID: 212480820}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2072379391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2072379389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36e37f035391a324481641a1a32a6f9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transfrom: {fileID: 2072379390}
 --- !u!1 &2080834472
 GameObject:
   m_ObjectHideFlags: 0
