@@ -2271,7 +2271,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0.1
+  m_LinearDrag: 1.5
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -2358,7 +2358,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 376758c2d6d70e042a7af089c1bb2587, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  acceleration: 4
+  acceleration: 8
   maxSpeed: 100
   turnFactor: 1.5
   driftFactor: 0.99
@@ -2394,7 +2394,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0.1
+  m_LinearDrag: 1.5
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -2481,7 +2481,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0c23f496933c7f44b61ecdb3c7ec429, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  acceleration: 4
+  acceleration: 8
   maxSpeed: 100
   turnFactor: 1.5
   driftFactor: 0.99
