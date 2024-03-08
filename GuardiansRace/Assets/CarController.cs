@@ -4,7 +4,7 @@ public class CarController : MonoBehaviour
 {
 
     [SerializeField] float acceleration = 4;
-    [SerializeField] float maxSpeed;
+    [SerializeField] float maxSpeed = 100;
     [SerializeField] float turnFactor = 2;
     [SerializeField] float driftFactor = .95f;
 
@@ -26,7 +26,6 @@ public class CarController : MonoBehaviour
     void FixedUpdate()
     {
         ApplyEngineForce();
-        KillLateralVelocity();
         ApplySteering();
     }
 
@@ -50,17 +49,6 @@ public class CarController : MonoBehaviour
 
     void ApplyEngineForce()
     {
-
-        if (accelerationFactorInput == 0)
-        {
-
-            carRigidbody2D.drag = Mathf.Lerp(carRigidbody2D.drag, 2, Time.fixedDeltaTime * 3);
-        }
-        else
-        {
-
-            carRigidbody2D.drag = 0.1f;
-        }
 
         //Caculate how much "forward" we are going in terms of the direction of our velocity
 
@@ -87,12 +75,5 @@ public class CarController : MonoBehaviour
 
         //Apply steering by rotating the car object
         carRigidbody2D.MoveRotation(rotationAngle);
-    }
-
-    void KillLateralVelocity()
-    {
-        Vector2 forwardVelocity = transform.up * Vector2.Dot(carRigidbody2D.velocity, transform.up);
-        Vector2 lateralVelocity = transform.right * Vector2.Dot(carRigidbody2D.velocity, transform.right);
-        carRigidbody2D.velocity = forwardVelocity * lateralVelocity * driftFactor;
     }
 }
