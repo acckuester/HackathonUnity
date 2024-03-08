@@ -2360,8 +2360,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   acceleration: 4
   maxSpeed: 100
-  turnFactor: 2
-  driftFactor: 0.95
+  turnFactor: 1.5
+  driftFactor: 0.99
 --- !u!1 &1579143662
 GameObject:
   m_ObjectHideFlags: 0
@@ -2483,8 +2483,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   acceleration: 4
   maxSpeed: 100
-  turnFactor: 2
-  driftFactor: 0.95
+  turnFactor: 1.5
+  driftFactor: 0.99
 --- !u!1 &1974336314
 GameObject:
   m_ObjectHideFlags: 0

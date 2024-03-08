@@ -50,6 +50,14 @@ public class CarController : MonoBehaviour
     void ApplyEngineForce()
     {
 
+        if (accelerationFactorInput == 0) {
+
+            carRigidbody2D.drag = Mathf.Lerp(carRigidbody2D.drag, 2,Time.fixedDeltaTime * 3);
+        }	
+        else {
+
+            carRigidbody2D.drag = 0.1f;
+        }
         //Caculate how much "forward" we are going in terms of the direction of our velocity
 
         float velocityVsUp = Vector2.Dot(transform.up, carRigidbody2D.velocity);
