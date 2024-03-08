@@ -31,6 +31,14 @@ public class CarController : MonoBehaviour
         ApplySteering();
     }
 
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            Debug.Log("Entered collision with " + collision.gameObject.name);
+        }
+    }
+
     void ApplyEngineForce()
     {
 
