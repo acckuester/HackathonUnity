@@ -17,8 +17,8 @@ public class CarController: MonoBehaviour{
     }
     
     void Update(){
-        accelerationInput = Input. GetAxis("Vertical");
-        steeringInput = Input. GetAxis ("Horizontal");
+        accelerationInput = Input.GetAxis("Vertical");
+        steeringInput = Input.GetAxis ("Horizontal");
     }
     
     void FixedUpdate(){
